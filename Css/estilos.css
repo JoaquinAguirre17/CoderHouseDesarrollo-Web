@@ -202,82 +202,6 @@ h1{
     
     
 }
-/*--------------------QUERY RESPONSIVE VISTA MOVIL----------------*/
-@media  (min-width: 320px) and (max-width: 480px) {
-     body{
-        
-        grid-template-areas:  
-        "header"
-        "main"
-        "footer"
-        ;
-    
-        background-image: url(../img/FondoHome.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat:no-repeat;
-        background-attachment: fixed;
-        height: 100%;
-        width: 100%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     } 
-     .MainAcercaDe{
-    
-        
-        grid-template-areas: 
-        "Inicio " 
-        "Presentacion2"
-        "Habilidades"
-        "HorasDeSoporte"
-        "Proyectos"
-        "ClientesFelices";
-        justify-items: center;
-        background-color: rgba(24, 23, 23, 0.76);
-        border-radius: 10px;
-        border-style: solid;
-        border-color: black;
-        margin: 20px ;
-     }
-     .MainReanudar{
-    
-        
-        grid-template-areas: 
-        "Titulo"
-        "Resumen"
-        "Educacion "
-        "ExperienciaLaboral"
-        ;
-        justify-content: center;
-        background-color: rgba(24, 23, 23, 0.76);
-        border-radius: 10px;
-        border-style: solid;
-        border-color: black;
-        margin: 20px;
-    }
-    .MainPortafolio{
-        display: grid;
-        grid-template-areas: 
-        "Titulo Titulo Titulo"
-        "Trabajo Trabajo Trabajo";
-        background-color: rgba(24, 23, 23, 0.76);
-        border-radius: 10px;
-        border-style: solid;
-        border-color: black;
-        margin: 20px;
-        grid-area: main;
-    }
-    .Trabajo{
-        grid-area: Trabajo;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;  
-    }
-} 
-
-
 
 /* --------------------ESTILO DE LA PAGINA "REANUDAR"------------------------------ */
 
@@ -415,15 +339,44 @@ h1{
 }
 
 /*----------------------------ESRTILO DE PAGINA "CONTACTO"------------------------------*/
-.Formulario{
+/*.Formulario{
      background-color: rgba(24, 23, 23, 0.76);
      margin-top: 10px;
      padding: 30px;
      width: 400px;
      border-radius: 10px;
+}*/
+.MainContacto{
+display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "Direccion Perfiles"
+    "Email Telefono"
+    "Formulario Formulario";
+    background-color: rgba(24, 23, 23, 0.484);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    grid-area: main;
 }
+/*--------------------FORMULARIO---------------*/
+.Formulario{
+    background-color: rgba(24, 23, 23, 0.57);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+    grid-area: Formulario;
+    justify-content: center;
+
+
+}
+/*-----------------------CONTROLES DEL FORMULARIO--------------------------*/
 .ControlNombre{
-    width: 40%;
+   
+    width: 45%;
     padding: 8px;
     border-radius: 5px;
     background-color: rgba(223, 220, 220, 0.89);
@@ -431,18 +384,22 @@ h1{
    
 }
 .ControlEmail{
-    width: 48%;
+   
+    width: 54%;
     padding: 8px;
     border-radius: 5px;
     background-color: rgba(223, 220, 220, 0.89);
 }
+
 .ControlSujeto{
+   
     width: 100%;
     margin-top: 10px;
     padding: 8px;
     background-color: rgba(223, 220, 220, 0.89);
 }
 .ControlMensaje{
+    
     width: 100%;
     height: 70px;
     margin-top: 10px;
@@ -450,45 +407,143 @@ h1{
     background-color: rgba(223, 220, 220, 0.89);
 }
 .Boton{
+    
     margin-top: 10px;
     width: 100%;
     background-color: rgb(3, 168, 3);
     padding: 10px;
 
 }
+/*------------------TITULO DE LA PAGINA-------------*/
+.Titulo{
+     grid-area: Titulo;;
+}
+/*-----------------EMAIL----------------------------*/
+.Email{
+    grid-area: Email;
+    background-color: rgba(24, 23, 23, 0.76);
+    padding: 20px;
+   width: 290px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 10px;
+}
+/*---------------------NUMERO DE TELEFONO-----------------*/
 .NumeroTel{
+    grid-area: Telefono;
     background-color: rgba(24, 23, 23, 0.76);
     padding: 10px;
     width: 150px;
     border-radius: 10px;
+    border-style: solid;
+    border-color: black;
     margin-top: 10px;
 
 }
-.Email{
-    background-color: rgba(24, 23, 23, 0.76);
-    padding: 10px;
-    width: 240px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
+/*--------------------SOCIAL------------------------*/
 .Social{
+    grid-area: Perfiles;
     background-color: rgba(24, 23, 23, 0.76);
     padding: 10px;
+    margin: 10px;
     width: 290px;
     border-radius: 10px;
+    border-style: solid;
+    border-color: black;
     margin-top: 10px;
 }
 .Social a{
     color: white;
     text-decoration: none;
 }
+/*--------------------DIRECCION--------------------*/
 .Direccion{
+    grid-area: Direccion;
     background-color: rgba(24, 23, 23, 0.76);
     padding: 10px;
     width: 290px;
     border-radius: 10px;
+    border-style: solid;
+    border-color: black;
     margin-top: 10px;
 }
+
+/*--------------------QUERY RESPONSIVE VISTA MOVIL----------------*/
+@media  (min-width: 320px) and (max-width: 480px) {
+    body{
+       
+       grid-template-areas:  
+       "header"
+       "main"
+       "footer"
+       ;
+   
+       background-image: url(../img/FondoHome.jpg);
+       background-position: center;
+       background-size: cover;
+       background-repeat:no-repeat;
+       background-attachment: fixed;
+       height: 100%;
+       width: 100%;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } 
+    .MainAcercaDe{
+   
+       
+       grid-template-areas: 
+       "Inicio " 
+       "Presentacion2"
+       "Habilidades"
+       "HorasDeSoporte"
+       "Proyectos"
+       "ClientesFelices";
+       justify-items: center;
+       background-color: rgba(24, 23, 23, 0.76);
+       border-radius: 10px;
+       border-style: solid;
+       border-color: black;
+       margin: 20px ;
+    }
+    .MainReanudar{
+   
+       
+       grid-template-areas: 
+       "Titulo"
+       "Resumen"
+       "Educacion "
+       "ExperienciaLaboral"
+       ;
+       justify-content: center;
+       background-color: rgba(24, 23, 23, 0.76);
+       border-radius: 10px;
+       border-style: solid;
+       border-color: black;
+       margin: 20px;
+   }
+   .MainPortafolio{
+       display: grid;
+       grid-template-areas: 
+       "Titulo Titulo Titulo"
+       "Trabajo Trabajo Trabajo";
+       background-color: rgba(24, 23, 23, 0.76);
+       border-radius: 10px;
+       border-style: solid;
+       border-color: black;
+       margin: 20px;
+       grid-area: main;
+   }
+   .Trabajo{
+       grid-area: Trabajo;
+       justify-content: center;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 20px;  
+   }
+} 
+
 /*footer{
     grid-area: footer;
     background-color: black;
