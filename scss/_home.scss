@@ -1,0 +1,16 @@
+.Presentacion {
+    margin-top: 20px;
+    margin-left: 50px;
+    @include EstilosMain;
+    width: 200px;
+    h1{
+        color: white;
+        padding: 10px;
+        
+    }
+    p{
+        color: white;
+        padding: 10px;
+        
+    }
+}

@@ -1,0 +1,82 @@
+.MainReanudar{
+    display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "Resumen Resumen"
+    "Educacion  ExperienciaLaboral";
+     @include EstilosMain;
+    
+}
+.ReanudarTitulo{
+    grid-area:Titulo ; 
+    margin: 10px;
+    h1{
+        color: $ColorH1;
+    }
+}
+.Resumen{
+    margin: 15px;
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:  rgba(50, 193, 6, 0.463);
+    justify-content: center;
+    width: 47%;
+    padding: 20px;
+    grid-area: Resumen;
+    transition: 1s;
+    h4{
+        color: rgb(3, 168, 3);
+    }
+    p{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }    
+}
+.Resumen:hover{
+    transform: scale(1.02); 
+}
+.Educacion{
+    margin: 15px;
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:  rgba(50, 193, 6, 0.463);
+    padding: 20px;
+    grid-area: Educacion;
+    transition: 1s;
+    h4{
+        color: rgb(3, 168, 3); 
+    }
+    p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+} 
+.Educacion:hover{
+    transform: scale(1.02); 
+}
+.ExperienciaLaboral{
+    margin: 15px;
+    background-color:  rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:  rgba(50, 193, 6, 0.463);
+    padding: 20px;
+    grid-area: ExperienciaLaboral;
+    transition: 1s;
+    h4{
+        color: rgb(3, 168, 3);
+    }
+    p{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+.badge{
+    background-color: rgba(128, 128, 128, 0.479);
+    margin: 5px;
+}
+.ExperienciaLaboral:hover{
+    transform: scale(1.02); 
+}

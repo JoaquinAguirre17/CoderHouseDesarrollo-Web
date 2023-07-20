@@ -1,0 +1,134 @@
+.MainAcercaDe{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "Inicio  Presentacion2 Presentacion2"
+    "Habilidades Habilidades Habilidades"
+    "HorasDeSoporte Proyectos ClientesFelices";
+    justify-items: center;
+    @include EstilosMain;
+    /*-----------------------------INICIO--------------------*/
+    .Inicio{
+        padding-top: 30px;
+        grid-area: Inicio;
+        margin: 20PX;
+        transition: 1s;
+        img{
+            width: 240px;
+            height: 300px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgba(50, 193, 6, 0.463);
+            
+        }
+       
+        h1{
+            text-decoration: underline;
+            color: rgb(0, 255, 0);
+        }
+        
+    }
+    .Inicio:hover{
+        transform: scale(1.02);
+    }
+    /*-------------------------PRESENTACION------------------------*/
+    .Presentacion2{   
+        margin: 10px;
+        background-color: rgba(24, 23, 23, 0.76);
+        border-radius: 10px;
+        border-style: solid;
+        border-color:rgba(50, 193, 6, 0.463);
+        padding: 30px;
+        justify-items: center;
+        grid-area: Presentacion2;
+        transition: 1s;
+        h2{
+            text-decoration:underline;
+        }
+        p{
+            padding-top: 10px;
+            padding-left: 10px;
+        }  
+        ul {
+            list-style: none;
+        } 
+    }
+    .Presentacion2:hover{
+        transform: scale(1.02);
+    }
+    /*--------------------------------HABILIDADES---------------------*/
+    .Habilidades{
+        background-color: rgba(24, 23, 23, 0.76);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgba(50, 193, 6, 0.463);
+        width: 95%;
+        /*justify-items: center;*/
+        padding: 10px;
+        grid-area: Habilidades;
+        margin: 20px;  
+        transition: 1s;
+        .progress{
+            margin: 20px;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        h3{
+            margin: 20px;
+        }
+        
+    }
+    .Habilidades:hover{
+        transform: scale(1.02);
+    }
+    /*--------------------------------HORAS DE SOPORTE-----------------*/
+    .HorasDeSoporte{
+        padding: 10px;
+        background-color: rgba(24, 23, 23, 0.76);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgba(50, 193, 6, 0.463);
+        grid-area: HorasDeSoporte;
+        margin: 10px;
+        justify-content: center; 
+        text-align: center;
+        transition: 1s;
+    }
+    .HorasDeSoporte:hover{
+        transform: scale(1.1);
+    }
+    /*-------------------------------PROYECTOS---------------*/
+    .Proyectos{
+        background-color: rgba(24, 23, 23, 0.76);
+        border-radius: 10px;
+        border-style: solid;
+        border-color:rgba(50, 193, 6, 0.463);
+        padding: 10px;
+        grid-area: Proyectos;
+        margin: 10px;
+        justify-content: center;
+        text-align: center;
+        transition: 1s;
+    }
+    .Proyectos:hover{
+        transform: scale(1.1);
+    }
+    /*----------------------------CLIENTES FELICES-------------------*/
+    .ClientesFelices{
+        background-color: rgba(24, 23, 23, 0.76);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgba(50, 193, 6, 0.463);
+        margin: 10px;
+        justify-content: center;
+        padding: 10px;
+        grid-area: ClientesFelices;
+        text-align: center;
+        transition: 1s;
+    }
+    .ClientesFelices:hover{
+        transform: scale(1.1);
+    }
+}

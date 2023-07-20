@@ -1,0 +1,588 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*---------------------VARIABLES------------------*/
+/*--------------------ESTILOS DE LOS FONDOS DEL MAIN-----*/
+/*--------------------------BODY--------------------------------*/
+body {
+  display: grid;
+  grid-template-areas: "header " "main " "footer";
+  background-image: url(../img/FondoHome.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/*------------------------------HEADER MENU DE NAVEGACION----------------------*/
+header {
+  background-color: rgba(1, 1, 1, 0.805);
+  color: white;
+  grid-area: header;
+}
+header .nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+header .navbar-toggler {
+  background-color: rgba(101, 101, 101, 0.862);
+}
+
+/* --------------------ESTILO DE LA PAGINA "HOME"------------------------------ */
+.Presentacion {
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  grid-area: main;
+  width: 200px;
+}
+.Presentacion h1 {
+  color: white;
+  padding: 10px;
+}
+.Presentacion p {
+  color: white;
+  padding: 10px;
+}
+
+/* --------------------ESTILO DE LA PAGINA "ACERCA DE"------------------------------ */
+.MainAcercaDe {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "Inicio  Presentacion2 Presentacion2" "Habilidades Habilidades Habilidades" "HorasDeSoporte Proyectos ClientesFelices";
+  justify-items: center;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  grid-area: main;
+  /*-----------------------------INICIO--------------------*/
+  /*-------------------------PRESENTACION------------------------*/
+  /*--------------------------------HABILIDADES---------------------*/
+  /*--------------------------------HORAS DE SOPORTE-----------------*/
+  /*-------------------------------PROYECTOS---------------*/
+  /*----------------------------CLIENTES FELICES-------------------*/
+}
+.MainAcercaDe .Inicio {
+  padding-top: 30px;
+  grid-area: Inicio;
+  margin: 20PX;
+  transition: 1s;
+}
+.MainAcercaDe .Inicio img {
+  width: 240px;
+  height: 300px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+}
+.MainAcercaDe .Inicio h1 {
+  text-decoration: underline;
+  color: rgb(0, 255, 0);
+}
+.MainAcercaDe .Inicio:hover {
+  transform: scale(1.02);
+}
+.MainAcercaDe .Presentacion2 {
+  margin: 10px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 30px;
+  justify-items: center;
+  grid-area: Presentacion2;
+  transition: 1s;
+}
+.MainAcercaDe .Presentacion2 h2 {
+  text-decoration: underline;
+}
+.MainAcercaDe .Presentacion2 p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.MainAcercaDe .Presentacion2 ul {
+  list-style: none;
+}
+.MainAcercaDe .Presentacion2:hover {
+  transform: scale(1.02);
+}
+.MainAcercaDe .Habilidades {
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  width: 95%;
+  /*justify-items: center;*/
+  padding: 10px;
+  grid-area: Habilidades;
+  margin: 20px;
+  transition: 1s;
+}
+.MainAcercaDe .Habilidades .progress {
+  margin: 20px;
+}
+.MainAcercaDe .Habilidades h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.MainAcercaDe .Habilidades h3 {
+  margin: 20px;
+}
+.MainAcercaDe .Habilidades:hover {
+  transform: scale(1.02);
+}
+.MainAcercaDe .HorasDeSoporte {
+  padding: 10px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  grid-area: HorasDeSoporte;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+.MainAcercaDe .HorasDeSoporte:hover {
+  transform: scale(1.1);
+}
+.MainAcercaDe .Proyectos {
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 10px;
+  grid-area: Proyectos;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+.MainAcercaDe .Proyectos:hover {
+  transform: scale(1.1);
+}
+.MainAcercaDe .ClientesFelices {
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  margin: 10px;
+  justify-content: center;
+  padding: 10px;
+  grid-area: ClientesFelices;
+  text-align: center;
+  transition: 1s;
+}
+.MainAcercaDe .ClientesFelices:hover {
+  transform: scale(1.1);
+}
+
+/* --------------------ESTILO DE LA PAGINA "REANUDAR"------------------------------ */
+.MainReanudar {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Resumen Resumen" "Educacion  ExperienciaLaboral";
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  grid-area: main;
+}
+
+.ReanudarTitulo {
+  grid-area: Titulo;
+  margin: 10px;
+}
+.ReanudarTitulo h1 {
+  color: rgb(0, 255, 0);
+}
+
+.Resumen {
+  margin: 15px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  justify-content: center;
+  width: 47%;
+  padding: 20px;
+  grid-area: Resumen;
+  transition: 1s;
+}
+.Resumen h4 {
+  color: rgb(3, 168, 3);
+}
+.Resumen p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Resumen:hover {
+  transform: scale(1.02);
+}
+
+.Educacion {
+  margin: 15px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 20px;
+  grid-area: Educacion;
+  transition: 1s;
+}
+.Educacion h4 {
+  color: rgb(3, 168, 3);
+}
+.Educacion p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Educacion:hover {
+  transform: scale(1.02);
+}
+
+.ExperienciaLaboral {
+  margin: 15px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 20px;
+  grid-area: ExperienciaLaboral;
+  transition: 1s;
+}
+.ExperienciaLaboral h4 {
+  color: rgb(3, 168, 3);
+}
+.ExperienciaLaboral p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.badge {
+  background-color: rgba(128, 128, 128, 0.479);
+  margin: 5px;
+}
+
+.ExperienciaLaboral:hover {
+  transform: scale(1.02);
+}
+
+/*----------------------ESTILO DE LA PAGINA "PORTAFOLIO"-----------------------*/
+.MainPortafolio {
+  display: grid;
+  grid-template-areas: "Titulo " "Trabajo ";
+  justify-content: center;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  grid-area: main;
+  /* #carouselExampleFade{
+       grid-area: Trabajo;
+       height: 500px;
+       width: 600px;
+       margin: 10px;
+       img{
+
+           height: 500px;
+           width: 600px;
+           border-radius: 10px;
+           border-style: solid;
+           border-color: rgba(14, 113, 36, 0.712);
+       }
+   }*/
+}
+.MainPortafolio .TituloPortafolio {
+  grid-area: Titulo;
+  margin: 10px;
+}
+.MainPortafolio .TituloPortafolio h1 {
+  color: rgb(0, 255, 0);
+}
+.MainPortafolio .card {
+  margin: 20px;
+  border-color: black;
+  background-color: rgba(126, 10, 123, 0.74);
+  transition: 2s;
+}
+.MainPortafolio .card .card-body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.MainPortafolio .card .card-body h5 {
+  text-decoration: underline;
+}
+.MainPortafolio .card .card-body .btn {
+  background-color: blue;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  transition: 1s;
+}
+.MainPortafolio .card:hover {
+  transform: scale(1.05);
+}
+.MainPortafolio .btn:hover {
+  transform: scale(1.05);
+}
+
+/*----------------------------ESRTILO DE PAGINA "CONTACTO"------------------------------*/
+.MainContacto {
+  display: grid;
+  grid-template-areas: "Titulo Titulo" "Direccion Perfiles" "Email Telefono" "Formulario Formulario";
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  grid-area: main;
+  /*--------------------FORMULARIO---------------*/
+  /*------------------TITULO DE LA PAGINA-------------*/
+  /*-----------------EMAIL----------------------------*/
+  /*---------------------NUMERO DE TELEFONO-----------------*/
+  /*--------------------SOCIAL------------------------*/
+  /*--------------------DIRECCION--------------------*/
+}
+.MainContacto .TituloContacto {
+  margin: 10px;
+}
+.MainContacto .TituloContacto h1 {
+  color: rgb(0, 255, 0);
+}
+.MainContacto .Formulario {
+  background-color: rgba(24, 23, 23, 0.57);
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 10px;
+  margin: 10px;
+  grid-area: Formulario;
+  justify-content: center;
+  /*-----------------------CONTROLES DEL FORMULARIO--------------------------*/
+}
+.MainContacto .Formulario .ControlNombre {
+  width: 45%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(223, 220, 220, 0.89);
+}
+.MainContacto .Formulario .ControlEmail {
+  width: 54%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(223, 220, 220, 0.89);
+}
+.MainContacto .Formulario .ControlSujeto {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: rgba(223, 220, 220, 0.89);
+}
+.MainContacto .Formulario .ControlMensaje {
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: rgba(223, 220, 220, 0.89);
+}
+.MainContacto .Formulario .btn {
+  margin-top: 10px;
+  background-color: rgb(3, 168, 3);
+  padding: 10px;
+}
+.MainContacto .Titulo {
+  grid-area: Titulo;
+}
+.MainContacto .Email {
+  grid-area: Email;
+  background-color: rgba(24, 23, 23, 0.76);
+  padding: 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  margin: 10px;
+  justify-content: center;
+  transition: 1s;
+}
+.MainContacto .Email:hover {
+  transform: scale(1.02);
+}
+.MainContacto .NumeroTel {
+  grid-area: Telefono;
+  background-color: rgba(24, 23, 23, 0.76);
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  margin: 10px;
+  justify-content: center;
+  transition: 1s;
+}
+.MainContacto .NumeroTel:hover {
+  transform: scale(1.02);
+}
+.MainContacto .Social {
+  grid-area: Perfiles;
+  background-color: rgba(24, 23, 23, 0.76);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  margin-top: 10px;
+  justify-content: center;
+  transition: 1s;
+}
+.MainContacto .Social .ListaRedes {
+  list-style: none;
+  display: flex;
+}
+.MainContacto .Social .ListaRedes a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+.MainContacto .Social .ListaRedes li {
+  transition: 1s;
+}
+.MainContacto .Social:hover {
+  transform: scale(1.02);
+}
+.MainContacto .ListaRedes li:hover {
+  transform: scale(1.2);
+}
+.MainContacto .Direccion {
+  grid-area: Direccion;
+  background-color: rgba(24, 23, 23, 0.76);
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  margin: 10px;
+  justify-content: center;
+  transition: 1s;
+}
+.MainContacto .Direccion:hover {
+  transform: scale(1.02);
+}
+
+/*--------------------QUERY RESPONSIVE VISTA MOVIL----------------*/
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    grid-template-areas: "header" "main" "footer";
+    background-image: url(../img/FondoHome.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .MainAcercaDe {
+    grid-template-areas: "Inicio " "Presentacion2" "Habilidades" "HorasDeSoporte" "Proyectos" "ClientesFelices";
+    justify-items: center;
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+  }
+  .MainReanudar {
+    grid-template-areas: "Titulo" "Resumen" "Educacion " "ExperienciaLaboral";
+    justify-content: center;
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+  }
+  .MainReanudar .Resumen {
+    width: 90%;
+    padding: 20px;
+    grid-area: Resumen;
+  }
+  /*--------RESPONSIVE PAGINA "CONTACTO"--------------*/
+  .MainContacto {
+    grid-template-areas: "Titulo " "Direccion " "Perfiles" "Telefono" "Email" "Formulario";
+  }
+  .MainContacto .ControlNombre {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(223, 220, 220, 0.89);
+  }
+  .MainContacto .ControlEmail {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(223, 220, 220, 0.89);
+  }
+  .MainContacto .ControlSujeto {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: rgba(223, 220, 220, 0.89);
+  }
+  .MainContacto .ControlMensaje {
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: rgba(223, 220, 220, 0.89);
+  }
+  .MainContacto .ListaRedes {
+    margin: 5px;
+  }
+  /*----------------RESPOSIVE PAGINA PORTAFOLIO--------------------*/
+  .MainPortafolio {
+    display: grid;
+    grid-template-areas: "Titulo " "Trabajo ";
+    justify-items: center;
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    margin: 20px;
+    grid-area: main;
+  }
+  .MainPortafolio .TituloPortafolio {
+    grid-area: Titulo;
+    margin: 10px;
+  }
+}
+/*footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+
+    border-style: solid;
+    border-color: black;
+
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px; 
+
+}*/
+
+/*# sourceMappingURL=styles.css.map */

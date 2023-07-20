@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*---------------------VARIABLES------------------*/
+$FondoMain:rgba(24, 23, 23, 0.76);
+$ColorH1: rgb(0, 255, 0);
+/*--------------------ESTILOS DE LOS FONDOS DEL MAIN-----*/
+@mixin EstilosMain{
+    background-color: $FondoMain;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    grid-area: main;
+}
+
+/*--------------------------BODY--------------------------------*/
+@import 'body';
+/*------------------------------HEADER MENU DE NAVEGACION----------------------*/
+@import 'header';
+
+/* --------------------ESTILO DE LA PAGINA "HOME"------------------------------ */
+@import 'home';
+/* --------------------ESTILO DE LA PAGINA "ACERCA DE"------------------------------ */
+@import 'acercaDe';
+
+/* --------------------ESTILO DE LA PAGINA "REANUDAR"------------------------------ */
+@import 'reanudar';
+/*----------------------ESTILO DE LA PAGINA "PORTAFOLIO"-----------------------*/
+@import 'portafolio';
+
+/*----------------------------ESRTILO DE PAGINA "CONTACTO"------------------------------*/
+@import 'contacto';
+
+
+/*--------------------QUERY RESPONSIVE VISTA MOVIL----------------*/
+@import 'mediaqueris';
+
+/*footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+    
+    border-style: solid;
+    border-color: black;
+    
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px; 
+    
+}*/
