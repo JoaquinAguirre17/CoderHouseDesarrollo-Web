@@ -1,48 +1,48 @@
-.MainContacto{
-    display: grid;
+.conteiner{
+        display: grid;
         grid-template-areas: 
-        "Titulo Titulo"
-        "Direccion Perfiles"
-        "Email Telefono"
-        "Formulario Formulario";
+        "titulo titulo"
+        "direccion perfiles"
+        "email telefono"
+        "formulario formulario";
         @include EstilosMain;
-        .TituloContacto{
+        .titulo_contacto{
             margin: 10px;
             h1{
                 color: $ColorH1;
             }
         }
         /*--------------------FORMULARIO---------------*/
-        .Formulario{
+        .formulario{
             background-color: rgba(24, 23, 23, 0.57);
             border-style: solid;
             border-radius: 10px;
             border-color: rgba(50, 193, 6, 0.463);
             padding: 10px;
             margin: 10px;
-            grid-area: Formulario;
+            grid-area: formulario;
             justify-content: center;
-
+        
             /*-----------------------CONTROLES DEL FORMULARIO--------------------------*/
-            .ControlNombre{
+            .control_nombre{
                 width: 45%;
                 padding: 8px;
                 border-radius: 5px;
                 background-color: rgba(223, 220, 220, 0.89);
             }
-            .ControlEmail{
+            .control_email{
                 width: 54%;
                 padding: 8px;
                 border-radius: 5px;
                 background-color: rgba(223, 220, 220, 0.89);
             }
-            .ControlSujeto{
+            .control_sujeto{
                 width: 100%;
                 margin-top: 10px;
                 padding: 8px;
                 background-color: rgba(223, 220, 220, 0.89);
             }
-            .ControlMensaje{
+            .control_mensaje{
                 width: 100%;
                 height: 70px;
                 margin-top: 10px;
@@ -57,12 +57,12 @@
         
         }
        /*------------------TITULO DE LA PAGINA-------------*/
-        .Titulo{
-            grid-area: Titulo;;
+        .titulo{
+            grid-area: titulo;;
         }
         /*-----------------EMAIL----------------------------*/
-        .Email{
-            grid-area: Email;
+        .email{
+            grid-area: email;
             background-color: rgba(24, 23, 23, 0.76);
             padding: 20px;
             
@@ -71,15 +71,11 @@
             border-color: rgba(50, 193, 6, 0.463);
             margin: 10px;
             justify-content: center;
-            transition: 1s;
-        }
-        .Email:hover{
-            transform: scale(1.02);
             
         }
          /*---------------------NUMERO DE TELEFONO-----------------*/
-        .NumeroTel{
-            grid-area: Telefono;
+        .numero_tel{
+            grid-area: telefono;
             background-color: rgba(24, 23, 23, 0.76);
             padding: 10px;  
             border-radius: 10px;
@@ -87,15 +83,11 @@
             border-color: rgba(50, 193, 6, 0.463);
             margin: 10px;
             justify-content: center;
-            transition: 1s;
         }
-        .NumeroTel:hover{
-            transform: scale(1.02);
-            
-        }
+        
         /*--------------------SOCIAL------------------------*/
-        .Social{
-            grid-area: Perfiles;
+        .social{
+            grid-area: perfiles;
             background-color: rgba(24, 23, 23, 0.76);
             padding: 10px;
             margin: 10px;
@@ -106,7 +98,7 @@
             margin-top: 10px;
             justify-content: center;
             transition: 1s;
-            .ListaRedes {
+            .lista_redes {
                 list-style: none;
                 display: flex;
                 a{
@@ -114,20 +106,13 @@
                     text-decoration: none;
                     margin: 5px;   
                 }
-                li{
-                    transition: 1s;
-                }
+              
             }
         }
-        .Social:hover{
-            transform: scale(1.02);  
-        }
-        .ListaRedes li:hover{
-            transform: scale(1.2);  
-        }
+        
         /*--------------------DIRECCION--------------------*/
-        .Direccion{
-            grid-area: Direccion;
+        .direccion{
+            grid-area: direccion;
             background-color: rgba(24, 23, 23, 0.76);
             padding: 10px;
             border-radius: 10px;
@@ -135,10 +120,6 @@
             border-color: rgba(50, 193, 6, 0.463);
             margin: 10px;
             justify-content: center;
-            transition: 1s;
-        }
-        .Direccion:hover{
-            transform: scale(1.02);  
         }
     }
     

@@ -4,7 +4,7 @@
 }
 /*---------------------VARIABLES------------------*/
 $FondoMain:rgba(24, 23, 23, 0.76);
-$ColorH1: rgb(0, 255, 0);
+$ColorH1: rgba(255, 136, 1, 0.877);
 /*--------------------ESTILOS DE LOS FONDOS DEL MAIN-----*/
 @mixin EstilosMain{
     background-color: $FondoMain;
@@ -19,6 +19,9 @@ $ColorH1: rgb(0, 255, 0);
 @import 'body';
 /*------------------------------HEADER MENU DE NAVEGACION----------------------*/
 @import 'header';
+
+/*----------------------------FOOTER----------------------------*/
+@import 'footer';
 
 /* --------------------ESTILO DE LA PAGINA "HOME"------------------------------ */
 @import 'home';

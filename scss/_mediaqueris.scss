@@ -1,3 +1,14 @@
+@media  (min-width: 480px) and (max-width: 991px) {
+    .nav-item{
+        /*background-color: rgba(243, 158, 79, 0.808);*/
+        border-radius: 5px;
+        border-style: solid;
+        margin: 5px;
+        border-color: rgba(102, 102, 102, 0.832);
+        width: 100px;
+        text-align: center;
+    }
+}
 @media  (min-width: 320px) and (max-width: 480px) {
     body{
        grid-template-areas:  
@@ -13,10 +24,23 @@
        width: 100%;
        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     } 
-    .MainAcercaDe{
+    /*---------------------RESPONSIVE HEADER-------------------------------*/
+    .nav-item{
+        /*background-color: rgba(243, 158, 79, 0.808);*/
+        border-radius: 5px;
+        border-style: solid;
+        margin: 5px;
+        border-color: rgba(102, 102, 102, 0.832);
+        width: 100px;
+        text-align: center
+        }
+     
+    
+     /*-------------------------RESPONSIVE ACERCA DE-------------------*/
+    .mainAcercaDe{
        grid-template-areas: 
-       "Inicio " 
-       "Presentacion2"
+       "inicio " 
+       "presentacion2"
        "Habilidades"
        "HorasDeSoporte"
        "Proyectos"
@@ -28,6 +52,7 @@
        border-color: black;
        margin: 20px ;
     }
+    /*-----------------------RESPONSIVE REANUDAR--------------------*/
     .MainReanudar{
        grid-template-areas: 
        "Titulo"
@@ -106,4 +131,21 @@
         }
        
     }
+    .mainFooter{
+        grid-template-areas: 
+        "derechos " 
+        "redes" ; 
+        margin-bottom: 2px;    
+    }
+    .listaredes{
+        grid-area: redes;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+            li{
+                list-style: none;
+                margin: 5px;
+            }
+    }
+   
 }

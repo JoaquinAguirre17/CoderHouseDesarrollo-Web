@@ -1,16 +1,22 @@
 header{
-    background-color: rgba(1, 1, 1, 0.805);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.827);
     grid-area: header;  
-    
-    .nav-item{
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-        }
-    }
     .navbar-toggler{
-        background-color: rgba(101, 101, 101, 0.862);
+        background-color: gray;
     }
-}
+    .nav-item{
+        /*background-color: rgba(243, 158, 79, 0.808);*/
+        border-radius: 10px;
+        border-style: solid;
+        margin: 8px;
+        border-color: rgba(102, 102, 102, 0.832);
+        transition: 0.5s;
+        .nav-link{
+            color: white;
+        }
+     } 
+     .nav-item:hover{
+        transform: scale(1.2);
+     }
+
+    }

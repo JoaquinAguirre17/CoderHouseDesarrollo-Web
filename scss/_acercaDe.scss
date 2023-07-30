@@ -1,16 +1,16 @@
-.MainAcercaDe{
+.mainAcercaDe{
     grid-area: main;
     display: grid;
     grid-template-areas: 
-    "Inicio  Presentacion2 Presentacion2"
+    "inicio  presentacion2 presentacion2"
     "Habilidades Habilidades Habilidades"
     "HorasDeSoporte Proyectos ClientesFelices";
     justify-items: center;
     @include EstilosMain;
     /*-----------------------------INICIO--------------------*/
-    .Inicio{
+    .inicio{
         padding-top: 30px;
-        grid-area: Inicio;
+        grid-area: inicio;
         margin: 20PX;
         transition: 1s;
         img{
@@ -18,29 +18,27 @@
             height: 300px;
             border-radius: 10px;
             border-style: solid;
-            border-color: rgba(50, 193, 6, 0.463);
+            border-color: rgba(15, 135, 15, 0.649);
             
         }
        
         h1{
             text-decoration: underline;
-            color: rgb(0, 255, 0);
+            color: rgba(255, 136, 1, 0.877);
         }
         
     }
-    .Inicio:hover{
-        transform: scale(1.02);
-    }
+    
     /*-------------------------PRESENTACION------------------------*/
-    .Presentacion2{   
-        margin: 10px;
+    .presentacion2{   
+        margin: 5px;
         background-color: rgba(24, 23, 23, 0.76);
         border-radius: 10px;
         border-style: solid;
         border-color:rgba(50, 193, 6, 0.463);
         padding: 30px;
         justify-items: center;
-        grid-area: Presentacion2;
+        grid-area: presentacion2;
         transition: 1s;
         h2{
             text-decoration:underline;
@@ -53,11 +51,9 @@
             list-style: none;
         } 
     }
-    .Presentacion2:hover{
-        transform: scale(1.02);
-    }
+    
     /*--------------------------------HABILIDADES---------------------*/
-    .Habilidades{
+    .habilidades{
         background-color: rgba(24, 23, 23, 0.76);
         border-radius: 10px;
         border-style: solid;
@@ -70,6 +66,10 @@
         transition: 1s;
         .progress{
             margin: 20px;
+            height: 20px;
+            .progress-bar{
+                background-color: rgba(255, 136, 1, 0.877);
+            }
         }
         h2{
             text-align: center;
@@ -80,9 +80,7 @@
         }
         
     }
-    .Habilidades:hover{
-        transform: scale(1.02);
-    }
+   
     /*--------------------------------HORAS DE SOPORTE-----------------*/
     .HorasDeSoporte{
         padding: 10px;
@@ -96,9 +94,7 @@
         text-align: center;
         transition: 1s;
     }
-    .HorasDeSoporte:hover{
-        transform: scale(1.1);
-    }
+   
     /*-------------------------------PROYECTOS---------------*/
     .Proyectos{
         background-color: rgba(24, 23, 23, 0.76);
@@ -110,11 +106,9 @@
         margin: 10px;
         justify-content: center;
         text-align: center;
-        transition: 1s;
+        
     }
-    .Proyectos:hover{
-        transform: scale(1.1);
-    }
+   
     /*----------------------------CLIENTES FELICES-------------------*/
     .ClientesFelices{
         background-color: rgba(24, 23, 23, 0.76);
