@@ -48,15 +48,16 @@ header .nav-item:hover {
   background-color: rgb(0, 0, 0);
   grid-area: footer;
   display: grid;
-  grid-template-areas: "derechos redes";
+  grid-template-areas: "derechos" "redes";
 }
 .mainFooter .derchos {
   grid-area: derechos;
-  margin: 30px;
+  text-align: center;
+  margin: 5px;
 }
 .mainFooter .listaredes {
   grid-area: redes;
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
 }
@@ -66,7 +67,7 @@ header .nav-item:hover {
   transition: 1s;
 }
 .mainFooter li:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 /* --------------------ESTILO DE LA PAGINA "HOME"------------------------------ */
@@ -363,7 +364,6 @@ header .nav-item:hover {
   margin: 20px;
   grid-area: main;
   /*--------------------FORMULARIO---------------*/
-  /*------------------TITULO DE LA PAGINA-------------*/
   /*-----------------EMAIL----------------------------*/
   /*---------------------NUMERO DE TELEFONO-----------------*/
   /*--------------------SOCIAL------------------------*/
@@ -371,6 +371,7 @@ header .nav-item:hover {
 }
 .conteiner .titulo_contacto {
   margin: 10px;
+  padding: 20px;
 }
 .conteiner .titulo_contacto h1 {
   color: rgba(255, 136, 1, 0.877);
@@ -387,13 +388,14 @@ header .nav-item:hover {
   /*-----------------------CONTROLES DEL FORMULARIO--------------------------*/
 }
 .conteiner .formulario .control_nombre {
-  width: 45%;
+  width: 100%;
   padding: 8px;
   border-radius: 5px;
   background-color: rgba(223, 220, 220, 0.89);
 }
 .conteiner .formulario .control_email {
-  width: 54%;
+  width: 100%;
+  margin-top: 10px;
   padding: 8px;
   border-radius: 5px;
   background-color: rgba(223, 220, 220, 0.89);
@@ -415,9 +417,6 @@ header .nav-item:hover {
   margin-top: 10px;
   background-color: rgb(3, 168, 3);
   padding: 10px;
-}
-.conteiner .titulo {
-  grid-area: titulo;
 }
 .conteiner .email {
   grid-area: email;
@@ -449,7 +448,6 @@ header .nav-item:hover {
   border-color: rgba(50, 193, 6, 0.463);
   margin-top: 10px;
   justify-content: center;
-  transition: 1s;
 }
 .conteiner .social .lista_redes {
   list-style: none;
@@ -459,6 +457,10 @@ header .nav-item:hover {
   color: white;
   text-decoration: none;
   margin: 5px;
+  transition: 1s;
+}
+.conteiner a:hover {
+  transform: scale(1.5);
 }
 .conteiner .direccion {
   grid-area: direccion;

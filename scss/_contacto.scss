@@ -8,6 +8,7 @@
         @include EstilosMain;
         .titulo_contacto{
             margin: 10px;
+            padding: 20px;
             h1{
                 color: $ColorH1;
             }
@@ -25,14 +26,14 @@
         
             /*-----------------------CONTROLES DEL FORMULARIO--------------------------*/
             .control_nombre{
-                width: 45%;
+                width: 100%;
                 padding: 8px;
                 border-radius: 5px;
                 background-color: rgba(223, 220, 220, 0.89);
             }
             .control_email{
-                width: 54%;
-                padding: 8px;
+                width: 100%;
+                margin-top:10px;                padding: 8px;
                 border-radius: 5px;
                 background-color: rgba(223, 220, 220, 0.89);
             }
@@ -56,10 +57,7 @@
             }
         
         }
-       /*------------------TITULO DE LA PAGINA-------------*/
-        .titulo{
-            grid-area: titulo;;
-        }
+      
         /*-----------------EMAIL----------------------------*/
         .email{
             grid-area: email;
@@ -97,17 +95,21 @@
             border-color: rgba(50, 193, 6, 0.463);
             margin-top: 10px;
             justify-content: center;
-            transition: 1s;
+            
             .lista_redes {
                 list-style: none;
                 display: flex;
                 a{
                     color: white;
                     text-decoration: none;
-                    margin: 5px;   
+                    margin: 5px; 
+                    transition: 1s;  
                 }
               
             }
+        }
+        a:hover{
+            transform: scale(1.5);
         }
         
         /*--------------------DIRECCION--------------------*/
