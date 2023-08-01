@@ -1,24 +1,24 @@
-.mainAcercaDe{
+.main_acerca_de{
     grid-area: main;
     display: grid;
     grid-template-areas: 
     "inicio  presentacion2 presentacion2"
-    "Habilidades Habilidades Habilidades"
-    "HorasDeSoporte Proyectos ClientesFelices";
+    "habilidades habilidades habilidades"
+    "horas_de_soporte proyectos clientes_felices";
     justify-items: center;
     @include EstilosMain;
     /*-----------------------------INICIO--------------------*/
     .inicio{
         padding-top: 30px;
         grid-area: inicio;
-        margin: 20PX;
-        transition: 1s;
+        margin: 20px;
         img{
             width: 240px;
             height: 300px;
             border-radius: 10px;
             border-style: solid;
             border-color: rgba(15, 135, 15, 0.649);
+           
             
         }
        
@@ -31,15 +31,17 @@
     
     /*-------------------------PRESENTACION------------------------*/
     .presentacion2{   
-        margin: 5px;
+        margin-top: 10px;
         background-color: rgba(24, 23, 23, 0.76);
         border-radius: 10px;
         border-style: solid;
         border-color:rgba(50, 193, 6, 0.463);
         padding: 30px;
+        margin: 30px;
+
         justify-items: center;
         grid-area: presentacion2;
-        transition: 1s;
+        
         h2{
             text-decoration:underline;
         }
@@ -50,6 +52,7 @@
         ul {
             list-style: none;
         } 
+
     }
     
     /*--------------------------------HABILIDADES---------------------*/
@@ -58,12 +61,12 @@
         border-radius: 10px;
         border-style: solid;
         border-color: rgba(50, 193, 6, 0.463);
-        width: 95%;
-        /*justify-items: center;*/
+        width: 97%;
+        justify-items: center;
         padding: 10px;
-        grid-area: Habilidades;
+        grid-area: habilidades;
         margin: 20px;  
-        transition: 1s;
+        
         .progress{
             margin: 20px;
             height: 20px;
@@ -82,27 +85,30 @@
     }
    
     /*--------------------------------HORAS DE SOPORTE-----------------*/
-    .HorasDeSoporte{
+    .horas_de_soporte{
         padding: 10px;
         background-color: rgba(24, 23, 23, 0.76);
         border-radius: 10px;
         border-style: solid;
         border-color: rgba(50, 193, 6, 0.463);
-        grid-area: HorasDeSoporte;
+        grid-area: horas_de_soporte;
         margin: 10px;
+       
         justify-content: center; 
         text-align: center;
-        transition: 1s;
+        
     }
    
     /*-------------------------------PROYECTOS---------------*/
-    .Proyectos{
+    .proyectos{
         background-color: rgba(24, 23, 23, 0.76);
         border-radius: 10px;
         border-style: solid;
         border-color:rgba(50, 193, 6, 0.463);
         padding: 10px;
-        grid-area: Proyectos;
+        width: 200px ;
+        grid-area: proyectos;
+       
         margin: 10px;
         justify-content: center;
         text-align: center;
@@ -110,7 +116,7 @@
     }
    
     /*----------------------------CLIENTES FELICES-------------------*/
-    .ClientesFelices{
+    .clientes_felices{
         background-color: rgba(24, 23, 23, 0.76);
         border-radius: 10px;
         border-style: solid;
@@ -118,11 +124,9 @@
         margin: 10px;
         justify-content: center;
         padding: 10px;
-        grid-area: ClientesFelices;
+        grid-area: clientes_felices;
         text-align: center;
-        transition: 1s;
+       
     }
-    .ClientesFelices:hover{
-        transform: scale(1.1);
-    }
+    
 }

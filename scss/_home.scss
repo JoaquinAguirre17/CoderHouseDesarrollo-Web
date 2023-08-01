@@ -1,12 +1,21 @@
-/*.mainhome{*/
-    .Presentacion {
-        margin-top: 20px;
-        margin-left: 50px;  
+.mainhome{
+    min-height: 80vh;
+    
+    .presentacion {
+       
         @include EstilosMain;
-        width: 200px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+        margin-top: 200px;
+        padding: 5px;
         
+        
+       
+       
             h1{
-                color: white;
+                color: $ColorH1;
                 padding: 10px;      
             }
             p{
@@ -14,4 +23,4 @@
                 padding: 10px;     
             }
     }
-/*}*/
+}

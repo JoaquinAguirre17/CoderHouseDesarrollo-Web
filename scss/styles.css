@@ -47,6 +47,7 @@ header .nav-item:hover {
 .mainFooter {
   background-color: rgb(0, 0, 0);
   grid-area: footer;
+  /*position:fixed;*/
   bottom: 0;
   display: grid;
   grid-template-areas: "derechos" "redes";
@@ -96,10 +97,10 @@ header .nav-item:hover {
 }
 
 /* --------------------ESTILO DE LA PAGINA "ACERCA DE"------------------------------ */
-.main_acerca_de {
+.mainAcercaDe {
   grid-area: main;
   display: grid;
-  grid-template-areas: "inicio  presentacion2 presentacion2" "habilidades habilidades habilidades" "horas_de_soporte proyectos clientes_felices";
+  grid-template-areas: "inicio  presentacion2 presentacion2" "Habilidades Habilidades Habilidades" "HorasDeSoporte Proyectos ClientesFelices";
   justify-items: center;
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
@@ -114,107 +115,113 @@ header .nav-item:hover {
   /*-------------------------------PROYECTOS---------------*/
   /*----------------------------CLIENTES FELICES-------------------*/
 }
-.main_acerca_de .inicio {
+.mainAcercaDe .inicio {
   padding-top: 30px;
   grid-area: inicio;
-  margin: 20px;
+  margin: 20PX;
+  transition: 1s;
 }
-.main_acerca_de .inicio img {
+.mainAcercaDe .inicio img {
   width: 240px;
   height: 300px;
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(15, 135, 15, 0.649);
 }
-.main_acerca_de .inicio h1 {
+.mainAcercaDe .inicio h1 {
   text-decoration: underline;
   color: rgba(255, 136, 1, 0.877);
 }
-.main_acerca_de .presentacion2 {
-  margin-top: 10px;
+.mainAcercaDe .presentacion2 {
+  margin: 5px;
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
   padding: 30px;
-  margin: 30px;
   justify-items: center;
   grid-area: presentacion2;
+  transition: 1s;
 }
-.main_acerca_de .presentacion2 h2 {
+.mainAcercaDe .presentacion2 h2 {
   text-decoration: underline;
 }
-.main_acerca_de .presentacion2 p {
+.mainAcercaDe .presentacion2 p {
   padding-top: 10px;
   padding-left: 10px;
 }
-.main_acerca_de .presentacion2 ul {
+.mainAcercaDe .presentacion2 ul {
   list-style: none;
 }
-.main_acerca_de .habilidades {
+.mainAcercaDe .habilidades {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
-  width: 97%;
-  justify-items: center;
+  width: 95%;
+  /*justify-items: center;*/
   padding: 10px;
-  grid-area: habilidades;
+  grid-area: Habilidades;
   margin: 20px;
+  transition: 1s;
 }
-.main_acerca_de .habilidades .progress {
+.mainAcercaDe .habilidades .progress {
   margin: 20px;
   height: 20px;
 }
-.main_acerca_de .habilidades .progress .progress-bar {
+.mainAcercaDe .habilidades .progress .progress-bar {
   background-color: rgba(255, 136, 1, 0.877);
 }
-.main_acerca_de .habilidades h2 {
+.mainAcercaDe .habilidades h2 {
   text-align: center;
   text-decoration: underline;
 }
-.main_acerca_de .habilidades h3 {
+.mainAcercaDe .habilidades h3 {
   margin: 20px;
 }
-.main_acerca_de .horas_de_soporte {
+.mainAcercaDe .HorasDeSoporte {
   padding: 10px;
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
-  grid-area: horas_de_soporte;
+  grid-area: HorasDeSoporte;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+.mainAcercaDe .Proyectos {
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 10px;
+  grid-area: Proyectos;
   margin: 10px;
   justify-content: center;
   text-align: center;
 }
-.main_acerca_de .proyectos {
+.mainAcercaDe .ClientesFelices {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
-  padding: 10px;
-  width: 200px;
-  grid-area: proyectos;
   margin: 10px;
   justify-content: center;
+  padding: 10px;
+  grid-area: ClientesFelices;
   text-align: center;
+  transition: 1s;
 }
-.main_acerca_de .clientes_felices {
-  background-color: rgba(24, 23, 23, 0.76);
-  border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(50, 193, 6, 0.463);
-  margin: 10px;
-  justify-content: center;
-  padding: 10px;
-  grid-area: clientes_felices;
-  text-align: center;
+.mainAcercaDe .ClientesFelices:hover {
+  transform: scale(1.1);
 }
 
 /* --------------------ESTILO DE LA PAGINA "REANUDAR"------------------------------ */
-.main_reanudar {
+.MainReanudar {
   display: grid;
-  grid-template-areas: "titulo titulo" "resumen experiencia_laboral" "educacion  experiencia_laboral";
+  grid-template-areas: "Titulo Titulo" "Resumen Resumen" "Educacion  ExperienciaLaboral";
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
@@ -222,92 +229,92 @@ header .nav-item:hover {
   margin: 20px;
   grid-area: main;
 }
-.main_reanudar .reanudar_titulo {
-  grid-area: titulo;
+
+.ReanudarTitulo {
+  grid-area: Titulo;
   margin: 10px;
-  margin-left: 20px;
 }
-.main_reanudar .reanudar_titulo h1 {
+.ReanudarTitulo h1 {
   color: rgba(255, 136, 1, 0.877);
 }
-.main_reanudar .resumen {
-  margin: 10px;
+
+.Resumen {
+  margin: 15px;
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
   justify-content: center;
+  width: 47%;
   padding: 20px;
-  grid-area: resumen;
+  grid-area: Resumen;
+  transition: 1s;
 }
-.main_reanudar .resumen h3 {
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 136, 1, 0.877);
-}
-.main_reanudar .resumen h4 {
+.Resumen h4 {
   color: rgb(3, 168, 3);
 }
-.main_reanudar .resumen p {
+.Resumen p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.main_reanudar .educacion {
-  margin: 10px;
-  background-color: rgba(24, 23, 23, 0.76);
-  border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(50, 193, 6, 0.463);
-  padding: 20px;
-  grid-area: educacion;
+
+.Resumen:hover {
+  transform: scale(1.02);
 }
-.main_reanudar .educacion h3 {
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 136, 1, 0.877);
-}
-.main_reanudar .educacion h4 {
-  color: rgb(3, 168, 3);
-}
-.main_reanudar .educacion p {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.main_reanudar .experiencia_laboral {
+
+.Educacion {
   margin: 15px;
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
   padding: 20px;
-  grid-area: experiencia_laboral;
+  grid-area: Educacion;
+  transition: 1s;
 }
-.main_reanudar .experiencia_laboral h3 {
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 136, 1, 0.877);
-}
-.main_reanudar .experiencia_laboral h4 {
+.Educacion h4 {
   color: rgb(3, 168, 3);
 }
-.main_reanudar .experiencia_laboral p {
+.Educacion p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.main_reanudar .lista {
-  border-style: solid;
-  border-color: rgba(128, 128, 128, 0.479);
-  border-radius: 10px;
-  margin: 10px;
-  list-style: none;
-  padding: 10px;
+
+.Educacion:hover {
+  transform: scale(1.02);
 }
-.main_reanudar .badge {
+
+.ExperienciaLaboral {
+  margin: 15px;
+  background-color: rgba(24, 23, 23, 0.76);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(50, 193, 6, 0.463);
+  padding: 20px;
+  grid-area: ExperienciaLaboral;
+  transition: 1s;
+}
+.ExperienciaLaboral h4 {
+  color: rgb(3, 168, 3);
+}
+.ExperienciaLaboral p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.badge {
   background-color: rgba(128, 128, 128, 0.479);
   margin: 5px;
+}
+
+.ExperienciaLaboral:hover {
+  transform: scale(1.02);
 }
 
 /*----------------------ESTILO DE LA PAGINA "PORTAFOLIO"-----------------------*/
 .MainPortafolio {
   display: grid;
-  grid-template-areas: "titulo " "trabajo ";
+  grid-template-areas: "Titulo " "Trabajo ";
   justify-content: center;
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
@@ -317,43 +324,40 @@ header .nav-item:hover {
   grid-area: main;
 }
 .MainPortafolio .TituloPortafolio {
-  grid-area: titulo;
+  grid-area: Titulo;
   margin: 10px;
 }
 .MainPortafolio .TituloPortafolio h1 {
   color: rgba(255, 136, 1, 0.877);
 }
-.MainPortafolio .trabajos_realizados {
-  grid-area: trabajo;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.MainPortafolio .trabajos_realizados .card {
+.MainPortafolio .card {
   margin: 20px;
   border-color: green;
   background-color: rgba(0, 0, 0, 0.741);
+  transition: 2s;
 }
-.MainPortafolio .trabajos_realizados .card .card-body {
+.MainPortafolio .card .card-body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.MainPortafolio .trabajos_realizados .card .card-body h5 {
+.MainPortafolio .card .card-body h5 {
   text-decoration: underline;
 }
-.MainPortafolio .trabajos_realizados .card .card-body .btn {
+.MainPortafolio .card .card-body .btn {
   background-color: blue;
   color: white;
   border-style: solid;
   border-color: black;
   transition: 1s;
 }
-.MainPortafolio .trabajos_realizados .btn:hover {
+.MainPortafolio .card:hover {
+  transform: scale(1.05);
+}
+.MainPortafolio .btn:hover {
   transform: scale(1.05);
 }
 
 /*----------------------------ESRTILO DE PAGINA "CONTACTO"------------------------------*/
-.main_contacto {
+.conteiner {
   display: grid;
   grid-template-areas: "titulo titulo" "direccion perfiles" "email telefono" "formulario formulario";
   background-color: rgba(24, 23, 23, 0.76);
@@ -368,25 +372,25 @@ header .nav-item:hover {
   /*--------------------SOCIAL------------------------*/
   /*--------------------DIRECCION--------------------*/
 }
-.main_contacto .titulo_contacto {
+.conteiner .titulo_contacto {
   margin: 10px;
   padding: 20px;
 }
-.main_contacto .titulo_contacto h1 {
+.conteiner .titulo_contacto h1 {
   color: rgba(255, 136, 1, 0.877);
 }
-.main_contacto .titulo_seccion {
+.conteiner .titulo_seccion {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: rgba(255, 136, 1, 0.877);
 }
-.main_contacto .parrafo {
+.conteiner .parrafo {
   text-align: center;
   /*text-decoration: underline;*/
   padding-top: 10px;
   font-size: larger;
 }
-.main_contacto .formulario {
+.conteiner .formulario {
   background-color: rgba(24, 23, 23, 0.57);
   border-style: solid;
   border-radius: 10px;
@@ -397,38 +401,38 @@ header .nav-item:hover {
   justify-content: center;
   /*-----------------------CONTROLES DEL FORMULARIO--------------------------*/
 }
-.main_contacto .formulario .control_nombre {
+.conteiner .formulario .control_nombre {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
   background-color: rgba(223, 220, 220, 0.89);
 }
-.main_contacto .formulario .control_email {
+.conteiner .formulario .control_email {
   width: 100%;
   margin-top: 10px;
   padding: 8px;
   border-radius: 5px;
   background-color: rgba(223, 220, 220, 0.89);
 }
-.main_contacto .formulario .control_sujeto {
+.conteiner .formulario .control_sujeto {
   width: 100%;
   margin-top: 10px;
   padding: 8px;
   background-color: rgba(223, 220, 220, 0.89);
 }
-.main_contacto .formulario .control_mensaje {
+.conteiner .formulario .control_mensaje {
   width: 100%;
   height: 70px;
   margin-top: 10px;
   padding: 8px;
   background-color: rgba(223, 220, 220, 0.89);
 }
-.main_contacto .formulario .btn {
+.conteiner .formulario .btn {
   margin-top: 10px;
   background-color: rgb(3, 168, 3);
   padding: 10px;
 }
-.main_contacto .email {
+.conteiner .email {
   grid-area: email;
   background-color: rgba(24, 23, 23, 0.76);
   padding: 20px;
@@ -438,7 +442,7 @@ header .nav-item:hover {
   margin: 10px;
   justify-content: center;
 }
-.main_contacto .numero_tel {
+.conteiner .numero_tel {
   grid-area: telefono;
   background-color: rgba(24, 23, 23, 0.76);
   padding: 10px;
@@ -448,7 +452,7 @@ header .nav-item:hover {
   margin: 10px;
   justify-content: center;
 }
-.main_contacto .social {
+.conteiner .social {
   grid-area: perfiles;
   background-color: rgba(24, 23, 23, 0.76);
   padding: 10px;
@@ -457,23 +461,23 @@ header .nav-item:hover {
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
   margin-top: 10px;
-  /*justify-content: center;*/
+  justify-content: center;
 }
-.main_contacto .social .lista_redes {
+.conteiner .social .lista_redes {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-.main_contacto .social .lista_redes a {
+.conteiner .social .lista_redes a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
   transition: 1s;
 }
-.main_contacto a:hover {
+.conteiner a:hover {
   transform: scale(1.5);
 }
-.main_contacto .direccion {
+.conteiner .direccion {
   grid-area: direccion;
   background-color: rgba(24, 23, 23, 0.76);
   padding: 10px;
@@ -494,6 +498,9 @@ header .nav-item:hover {
     border-color: rgba(102, 102, 102, 0.832);
     width: 100px;
     text-align: center;
+  }
+  .mainhome .presentacion {
+    width: max-content;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -520,15 +527,18 @@ header .nav-item:hover {
     text-align: center;
   }
   /*-------------------------RESPONSIVE ACERCA DE-------------------*/
-  .main_acerca_de {
-    grid-template-areas: "inicio " "presentacion2" "habilidades" "horas_de_soporte" "proyectos" "clientes_felices";
-  }
-  .main_acerca_de .presentacion2 {
-    width: 97%;
+  .mainAcercaDe {
+    grid-template-areas: "inicio " "presentacion2" "Habilidades" "HorasDeSoporte" "Proyectos" "ClientesFelices";
+    justify-items: center;
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
   }
   /*-----------------------RESPONSIVE REANUDAR--------------------*/
-  .main_reanudar {
-    grid-template-areas: "titulo" "resumen" "educacion " "experiencia_laboral";
+  .MainReanudar {
+    grid-template-areas: "Titulo" "Resumen" "Educacion " "ExperienciaLaboral";
     justify-content: center;
     background-color: rgba(24, 23, 23, 0.76);
     border-radius: 10px;
@@ -536,53 +546,50 @@ header .nav-item:hover {
     border-color: black;
     margin: 20px;
   }
-  .main_reanudar .reanudar_titulo {
-    text-align: center;
-  }
-  .main_reanudar .resumen {
+  .MainReanudar .Resumen {
     width: 90%;
     padding: 20px;
-    grid-area: resumen;
+    grid-area: Resumen;
   }
   /*--------RESPONSIVE PAGINA "CONTACTO"--------------*/
-  .main_contacto {
+  .conteiner {
     grid-template-areas: "titulo " "direccion " "perfiles" "telefono" "email" "formulario";
   }
-  .main_contacto .titulo_contacto {
+  .conteiner .titulo_contacto {
     text-align: center;
   }
-  .main_contacto .control_nombre {
+  .conteiner .control_nombre {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     background-color: rgba(223, 220, 220, 0.89);
   }
-  .main_contacto .control_email {
+  .conteiner .control_email {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     background-color: rgba(223, 220, 220, 0.89);
   }
-  .main_contacto .control_sujeto {
+  .conteiner .control_sujeto {
     width: 100%;
     margin-top: 10px;
     padding: 8px;
     background-color: rgba(223, 220, 220, 0.89);
   }
-  .main_contacto .control_mensaje {
+  .conteiner .control_mensaje {
     width: 100%;
     height: 70px;
     margin-top: 10px;
     padding: 8px;
     background-color: rgba(223, 220, 220, 0.89);
   }
-  .main_contacto .lista_redes {
+  .conteiner .lista_redes {
     margin: 5px;
   }
   /*----------------RESPOSIVE PAGINA PORTAFOLIO--------------------*/
   .MainPortafolio {
     display: grid;
-    grid-template-areas: "titulo " "trabajo ";
+    grid-template-areas: "Titulo " "Trabajo ";
     justify-items: center;
     background-color: rgba(24, 23, 23, 0.76);
     border-radius: 10px;
@@ -592,44 +599,40 @@ header .nav-item:hover {
     grid-area: main;
   }
   .MainPortafolio .TituloPortafolio {
-    grid-area: titulo;
+    grid-area: Titulo;
     margin: 10px;
   }
-  /* .mainFooter{
-          grid-template-areas: 
-          "derechos " 
-          "redes" ; 
-          margin-bottom: 2px;    
-      }
-      .listaredes{
-          grid-area: redes;
-          margin-top: 5px;
-          display: flex;
-          justify-content: center;
-              li{
-                  list-style: none;
-                  margin: 5px;
-              }
-      }
-  */
-}
-/*-----------------------RESPONSIVE INTERMEDIO----------------------*/
-@media (min-width: 480px) and (max-width: 770px) {
-  /*---------------RESPONSIVE INTERMEDIO ACERCA DE------------------*/
-  .main_acerca_de {
-    grid-template-areas: "inicio inicio inicio" "presentacion2 presentacion2 presentacion2" "habilidades habilidades habilidades" "horas_de_soporte proyectos clientes_felices";
+  .mainFooter {
+    grid-template-areas: "derechos " "redes";
+    margin-bottom: 2px;
   }
-  .presentacion2 {
-    width: 97%;
+  .listaredes {
+    grid-area: redes;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
   }
-  /*---------------------RESPONSIVE INTERMEDIO CONTACTO--------------------*/
-  .main_contacto {
-    grid-template-areas: "titulo " "direccion " "perfiles" "telefono" "email" "formulario";
-  }
-  /*---------------------RESPONSIVE INTERMEDIO REANUDAR---------------------*/
-  .main_reanudar {
-    grid-template-areas: "titulo" "resumen" "educacion " "experiencia_laboral";
+  .listaredes li {
+    list-style: none;
+    margin: 5px;
   }
 }
+/*footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+
+    border-style: solid;
+    border-color: black;
+
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px; 
+
+}*/
 
 /*# sourceMappingURL=styles.css.map */

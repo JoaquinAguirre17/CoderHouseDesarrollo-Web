@@ -1,10 +1,17 @@
 body{
+    
+    padding: 0;
+    margin: 0;
+    
     display: grid;
        grid-template-areas:  
        "header "
        "main "
        "footer" ;
       
+       display: flex;
+       flex-direction: column;
+       min-height: auto;
        background-image: url(../img/FondoHome.jpg);
        background-position: center;
        background-size: cover;

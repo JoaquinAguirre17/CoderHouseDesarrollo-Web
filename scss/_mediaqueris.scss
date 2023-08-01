@@ -24,6 +24,8 @@
        width: 100%;
        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     } 
+    /*---------------------RESPONSIVE HOME-------------------------------*/
+   
     /*---------------------RESPONSIVE HEADER-------------------------------*/
     .nav-item{
         /*background-color: rgba(243, 158, 79, 0.808);*/
@@ -37,28 +39,26 @@
      
     
      /*-------------------------RESPONSIVE ACERCA DE-------------------*/
-    .mainAcercaDe{
+    .main_acerca_de{
        grid-template-areas: 
        "inicio " 
        "presentacion2"
-       "Habilidades"
-       "HorasDeSoporte"
-       "Proyectos"
-       "ClientesFelices";
-       justify-items: center;
-       background-color: rgba(24, 23, 23, 0.76);
-       border-radius: 10px;
-       border-style: solid;
-       border-color: black;
-       margin: 20px ;
+       "habilidades"
+       "horas_de_soporte"
+       "proyectos"
+       "clientes_felices";
+     
+       .presentacion2{
+        width: 97%;
+     }
     }
     /*-----------------------RESPONSIVE REANUDAR--------------------*/
-    .MainReanudar{
+    .main_reanudar{
        grid-template-areas: 
-       "Titulo"
-       "Resumen"
-       "Educacion "
-       "ExperienciaLaboral"
+       "titulo"
+       "resumen"
+       "educacion "
+       "experiencia_laboral"
        ;
        justify-content: center;
        background-color: rgba(24, 23, 23, 0.76);
@@ -66,49 +66,56 @@
        border-style: solid;
        border-color: black;
        margin: 20px;
-       .Resumen{
+       .reanudar_titulo{
+        text-align: center;
+       }
+
+       .resumen{
             width: 90%;
             padding: 20px;
-            grid-area: Resumen;   
+            grid-area: resumen;   
          }
    }
    
    
    /*--------RESPONSIVE PAGINA "CONTACTO"--------------*/
-   .MainContacto{
+   .main_contacto{
     grid-template-areas: 
-    "Titulo "
-    "Direccion "
-    "Perfiles"
-    "Telefono"
-    "Email"
-    "Formulario";
-    .ControlNombre{
+    "titulo "
+    "direccion "
+    "perfiles"
+    "telefono"
+    "email"
+    "formulario";
+    .titulo_contacto{
+        text-align: center;
+        }
+    .control_nombre{
         width: 100%;
         padding: 8px;
         border-radius: 5px;
         background-color: rgba(223, 220, 220, 0.89);
     }
-    .ControlEmail{
+    .control_email{
         width: 100%;
         padding: 8px;
         border-radius: 5px;
         background-color: rgba(223, 220, 220, 0.89);
     }
-    .ControlSujeto{
+    .control_sujeto{
         width: 100%;
         margin-top: 10px;
         padding: 8px;
         background-color: rgba(223, 220, 220, 0.89);
     }
-    .ControlMensaje{
+    .control_mensaje{
         width: 100%;
         height: 70px;
         margin-top: 10px;
         padding: 8px;
         background-color: rgba(223, 220, 220, 0.89);
     }
-    .ListaRedes {
+    .lista_redes {
         margin: 5px;
     }
    }
@@ -116,8 +123,8 @@
    .MainPortafolio{
     display: grid;
     grid-template-areas: 
-    "Titulo "
-    "Trabajo ";
+    "titulo "
+    "trabajo ";
     justify-items: center;
     background-color: rgba(24, 23, 23, 0.76);
     border-radius: 10px;
@@ -126,12 +133,12 @@
     margin: 20px;
     grid-area: main;
         .TituloPortafolio{
-            grid-area: Titulo;
+            grid-area: titulo;
             margin: 10px; 
         }
        
     }
-    .mainFooter{
+   /* .mainFooter{
         grid-template-areas: 
         "derechos " 
         "redes" ; 
@@ -147,5 +154,39 @@
                 margin: 5px;
             }
     }
+*/
    
+}
+/*-----------------------RESPONSIVE INTERMEDIO----------------------*/
+
+@media  (min-width: 480px) and (max-width: 770px) {
+    /*---------------RESPONSIVE INTERMEDIO ACERCA DE------------------*/
+    .main_acerca_de{
+        grid-template-areas: 
+        "inicio inicio inicio"  
+        "presentacion2 presentacion2 presentacion2"
+        "habilidades habilidades habilidades"
+        "horas_de_soporte proyectos clientes_felices";
+    }
+    .presentacion2{
+       width: 97%;
+    }
+    /*---------------------RESPONSIVE INTERMEDIO CONTACTO--------------------*/
+    .main_contacto{
+        grid-template-areas: 
+        "titulo "
+        "direccion "
+        "perfiles"
+        "telefono"
+        "email"
+        "formulario";
+    }
+    /*---------------------RESPONSIVE INTERMEDIO REANUDAR---------------------*/
+    .main_reanudar{
+        grid-template-areas: 
+        "titulo"
+        "resumen"
+        "educacion "
+        "experiencia_laboral";
+    }
 }
