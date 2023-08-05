@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: auto;
-  background-image: url(../img/FondoHome.jpg);
+  background-image: url(../img/Fondo-min.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,20 +71,22 @@ header .nav-item:hover {
 /* --------------------ESTILO DE LA PAGINA "HOME"------------------------------ */
 .mainhome {
   min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .mainhome .presentacion {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(71, 69, 69);
   margin: 20px;
   grid-area: main;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  text-align: center;
-  margin-top: 200px;
+  height: min-content;
+  margin: 20px;
   padding: 5px;
+  text-align: center;
 }
 .mainhome .presentacion h1 {
   color: rgba(255, 136, 1, 0.877);
@@ -104,7 +106,7 @@ header .nav-item:hover {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(71, 69, 69);
   margin: 20px;
   grid-area: main;
   /*-----------------------------INICIO--------------------*/
@@ -218,7 +220,7 @@ header .nav-item:hover {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(71, 69, 69);
   margin: 20px;
   grid-area: main;
 }
@@ -312,7 +314,7 @@ header .nav-item:hover {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(71, 69, 69);
   margin: 20px;
   grid-area: main;
 }
@@ -359,7 +361,7 @@ header .nav-item:hover {
   background-color: rgba(24, 23, 23, 0.76);
   border-radius: 10px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(71, 69, 69);
   margin: 20px;
   grid-area: main;
   /*--------------------FORMULARIO---------------*/
@@ -382,7 +384,6 @@ header .nav-item:hover {
 }
 .main_contacto .parrafo {
   text-align: center;
-  /*text-decoration: underline;*/
   padding-top: 10px;
   font-size: larger;
 }
@@ -457,7 +458,6 @@ header .nav-item:hover {
   border-style: solid;
   border-color: rgba(50, 193, 6, 0.463);
   margin-top: 10px;
-  /*justify-content: center;*/
 }
 .main_contacto .social .lista_redes {
   list-style: none;
@@ -487,7 +487,6 @@ header .nav-item:hover {
 /*--------------------QUERY RESPONSIVE VISTA MOVIL----------------*/
 @media (min-width: 480px) and (max-width: 991px) {
   .nav-item {
-    /*background-color: rgba(243, 158, 79, 0.808);*/
     border-radius: 5px;
     border-style: solid;
     margin: 5px;
@@ -499,7 +498,7 @@ header .nav-item:hover {
 @media (min-width: 320px) and (max-width: 480px) {
   body {
     grid-template-areas: "header" "main" "footer";
-    background-image: url(../img/FondoHome.jpg);
+    background-image: url(../img/Fondo-min.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -509,6 +508,9 @@ header .nav-item:hover {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   /*---------------------RESPONSIVE HOME-------------------------------*/
+  .mainhome {
+    justify-content: center;
+  }
   /*---------------------RESPONSIVE HEADER-------------------------------*/
   .nav-item {
     /*background-color: rgba(243, 158, 79, 0.808);*/
@@ -595,23 +597,6 @@ header .nav-item:hover {
     grid-area: titulo;
     margin: 10px;
   }
-  /* .mainFooter{
-          grid-template-areas: 
-          "derechos " 
-          "redes" ; 
-          margin-bottom: 2px;    
-      }
-      .listaredes{
-          grid-area: redes;
-          margin-top: 5px;
-          display: flex;
-          justify-content: center;
-              li{
-                  list-style: none;
-                  margin: 5px;
-              }
-      }
-  */
 }
 /*-----------------------RESPONSIVE INTERMEDIO----------------------*/
 @media (min-width: 480px) and (max-width: 770px) {
@@ -629,6 +614,26 @@ header .nav-item:hover {
   /*---------------------RESPONSIVE INTERMEDIO REANUDAR---------------------*/
   .main_reanudar {
     grid-template-areas: "titulo" "resumen" "educacion " "experiencia_laboral";
+  }
+  .mainhome .presentacion {
+    background-color: rgba(24, 23, 23, 0.76);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(71, 69, 69);
+    margin: 20px;
+    grid-area: main;
+    margin: 30px;
+    margin-top: 300px;
+    text-align: center;
+    padding: 5px;
+  }
+  .mainhome .presentacion h1 {
+    color: rgba(255, 136, 1, 0.877);
+    padding: 10px;
+  }
+  .mainhome .presentacion p {
+    color: white;
+    padding: 10px;
   }
 }
 

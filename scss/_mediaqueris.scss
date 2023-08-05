@@ -1,6 +1,6 @@
 @media  (min-width: 480px) and (max-width: 991px) {
     .nav-item{
-        /*background-color: rgba(243, 158, 79, 0.808);*/
+       
         border-radius: 5px;
         border-style: solid;
         margin: 5px;
@@ -15,7 +15,7 @@
        "header"
        "main"
        "footer";
-       background-image: url(../img/FondoHome.jpg);
+       background-image: url(../img/Fondo-min.JPG);
        background-position: center;
        background-size: cover;
        background-repeat:no-repeat;
@@ -25,7 +25,10 @@
        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     } 
     /*---------------------RESPONSIVE HOME-------------------------------*/
-   
+    .mainhome{
+        justify-content: center;
+        
+    }
     /*---------------------RESPONSIVE HEADER-------------------------------*/
     .nav-item{
         /*background-color: rgba(243, 158, 79, 0.808);*/
@@ -138,24 +141,6 @@
         }
        
     }
-   /* .mainFooter{
-        grid-template-areas: 
-        "derechos " 
-        "redes" ; 
-        margin-bottom: 2px;    
-    }
-    .listaredes{
-        grid-area: redes;
-        margin-top: 5px;
-        display: flex;
-        justify-content: center;
-            li{
-                list-style: none;
-                margin: 5px;
-            }
-    }
-*/
-   
 }
 /*-----------------------RESPONSIVE INTERMEDIO----------------------*/
 
@@ -188,5 +173,22 @@
         "resumen"
         "educacion "
         "experiencia_laboral";
+    }
+    .mainhome{
+        .presentacion {
+            @include EstilosMain;
+            margin: 30px;
+            margin-top: 300px;
+            text-align: center;
+            padding: 5px;
+            h1{
+                color: $ColorH1;
+                padding: 10px;      
+            }
+            p{
+                color: white;
+                padding: 10px;     
+            }
+        }
     }
 }

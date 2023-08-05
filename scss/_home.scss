@@ -1,15 +1,16 @@
 .mainhome{
     min-height: 80vh;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .presentacion {
        
         @include EstilosMain;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        text-align: center;
-        margin-top: 200px;
+        height: min-content;
+        margin: 20px;
         padding: 5px;
+        text-align: center;
         
         
        

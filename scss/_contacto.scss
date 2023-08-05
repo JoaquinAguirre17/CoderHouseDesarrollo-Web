@@ -19,12 +19,9 @@
             text-decoration-color: $ColorH1;    
          }
         .parrafo{
-
-                text-align: center;
-                /*text-decoration: underline;*/
-                padding-top: 10px;
-                font-size:larger;
-             
+            text-align: center;
+            padding-top: 10px;
+            font-size:larger;
         }
         /*--------------------FORMULARIO---------------*/
         .formulario{
@@ -46,7 +43,8 @@
             }
             .control_email{
                 width: 100%;
-                margin-top:10px;                padding: 8px;
+                margin-top:10px; 
+                padding: 8px;
                 border-radius: 5px;
                 background-color: rgba(223, 220, 220, 0.89);
             }
@@ -68,7 +66,6 @@
                 background-color: rgb(3, 168, 3);
                 padding: 10px;
             }
-        
         }
       
         /*-----------------EMAIL----------------------------*/
@@ -76,14 +73,11 @@
             grid-area: email;
             background-color: rgba(24, 23, 23, 0.76);
             padding: 20px;
-            
             border-radius: 10px;
             border-style: solid;
             border-color: rgba(50, 193, 6, 0.463);
             margin: 10px;
             justify-content: center;
-            
-            
         }
          /*---------------------NUMERO DE TELEFONO-----------------*/
         .numero_tel{
@@ -95,7 +89,6 @@
             border-color: rgba(50, 193, 6, 0.463);
             margin: 10px;
             justify-content: center;
-            
         }
         
         /*--------------------SOCIAL------------------------*/
@@ -104,14 +97,10 @@
             background-color: rgba(24, 23, 23, 0.76);
             padding: 10px;
             margin: 10px;
-            
             border-radius: 10px;
             border-style: solid;
             border-color: rgba(50, 193, 6, 0.463);
             margin-top: 10px;
-            /*justify-content: center;*/
-           
-            
             .lista_redes {
                 list-style: none;
                 display: flex;
@@ -122,7 +111,6 @@
                     margin-left: 20px;
                     transition: 1s;  
                 }
-              
             }
         }
         a:hover{
@@ -139,8 +127,6 @@
             border-color: rgba(50, 193, 6, 0.463);
             margin: 10px;
             justify-content: center;
-            
-            
         }
     }
     
